@@ -154,4 +154,26 @@ def process_files(ds_names = None):
             print(f'Data Processing of {ds_name} is complete')
 ```
 ## Execução da Pipeline:
-Nessa última parte, irei apresentar os resultados de execução da **Pipeline** de **ETL** em **Python**, primeiramente irei colocar um exemplo dos dados dos arquivos **CSV** importados:
+Nessa última parte, irei apresentar os resultados de execução da **Pipeline** de **ETL** em **Python**, primeiramente irei colocar um exemplo dos dados dos arquivos **CSV** importados de **customers** e **orders** que foram os únicos arquivos **CSV** tratados e transformados antes do carregamento para o banco de dados **PostGreSQL**:
+
+Dados brutos de **Customers**:
+
+![](./img/customers_csv.png)
+
+Dados brutos de **Orders**:
+
+![](./img/orders_csv.png)
+
+Depois da execução da **Pipeline** de **ETL** em **Python** foi obtido esse resultado de transformação e população de tais dados brutos de arquivos **CSV** no banco de dados **PostGreSQL**:
+
+Dados transformados de **Customers** carregados no banco de dados **PostGreSQL**:
+
+![](./img/customers_transformed_postgresql.png)
+
+Dados transformados de **Orders** carregados no banco de dados **PostGreSQL**:
+
+![](./img/orders_transformed_postgresql.png)
+
+## Conclusão:
+
+Por fim, tal projeto foi concluído com sucesso, uma das melhorias futuras para tal projeto seria possivelmente **(1)** usar o **Apache Airflow** para automatizar a execução de tal **Pipeline** de **ETL** em **Python** ou **(2)** conectar uma ferramenta de **BI** para entregar tais dados tratados e transformados em um **dashboard** de análise de negócios de tais dados disponibilizados.
