@@ -69,7 +69,7 @@ def transform_csv(df, ds_name):
         return print(f'Transformation of {ds_name}')
 ```
 
-Tal função **Python** **(1)** adiciona a coluna de nome completo do cliente através da concatenação de **strings** da coluna de **customer_fname** e **customer_lname** do arquivo de **customers**, **(2)** coloca os status do pedido com a primeira letra em maiúsculo e **(3)** substitui o caractere **'_'** por **' '** na mesma coluna de **order_status** 
+Tal função **Python** **(1)** adiciona a coluna de nome completo do cliente através da concatenação de **strings** da coluna de **customer_fname** e **customer_lname** do arquivo de **customers**, **(2)** coloca os status do pedido com a primeira letra em maiúsculo, **(3)** substitui o caractere **'_'** por **' '** na mesma coluna de **order_status** e **(4)** converter a coluna **order_date** para o tipo **DATETIME** e depois retirar a parte de horário e manter somente a parte de data de tal coluna.
 
 ## Carregamento:
 
